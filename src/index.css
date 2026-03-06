@@ -1,0 +1,153 @@
+/* ---------- Global Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f2f4f8;
+}
+
+/* ---------- App Container ---------- */
+.app-container {
+  width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Heading ---------- */
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ---------- Labels Section ---------- */
+.labels-container {
+  background: #f9fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e6eb;
+}
+
+.label-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.Label_text {
+  width: 80px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.input_field {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #ccd1d9;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input_field:focus {
+  border-color: #3498db;
+}
+
+/* ---------- Buttons ---------- */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.common_css {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Individual button colors */
+.get_data_css {
+  background-color: #2e86de;
+}
+
+.get_data_css:hover {
+  opacity: 0.85;
+}
+
+/* POST */
+.buttons-container button:nth-child(2) {
+  background-color: #27ae60;
+}
+
+/* PUT */
+.buttons-container button:nth-child(3) {
+  background-color: #f39c12;
+}
+
+/* DELETE */
+.buttons-container button:nth-child(4) {
+  background-color: #e74c3c;
+}
+
+/* ---------- Data Section ---------- */
+.data-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ---------- API Response ---------- */
+.api-response {
+  background: #f7f9fb;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e3e6eb;
+}
+
+.api-response h4 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.api-response pre {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+/* ---------- Stored Data ---------- */
+.user-card {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e3e6eb;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* ---------- Empty Message ---------- */
+.data-container > p {
+  grid-column: span 2;
+  text-align: center;
+  color: #7f8c8d;
+}
