@@ -128,8 +128,7 @@ const App = () => {
       const data = await response.json();
       alert("User updated successfully");
 
-  setUsers(users.map((u) => (u.id === Number(id) ? data : u)));
-    } catch (error) {
+      setUsers(users.map((u) => (u.id === Number(id) ? data : u)));    } catch (error) {
       console.error("PUT error:", error);
     }
   };
@@ -149,7 +148,8 @@ const App = () => {
 
       if (response.ok) {
         alert(`User with ID ${id} deleted`);
-setUsers(users.filter((u) => u.id !== Number(id)));        setId("");
+    setUsers(users.filter((u) => u.id !== Number(id)));
+        setId("");
       } else {
         alert("Delete failed");
       }
